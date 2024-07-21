@@ -1,0 +1,6 @@
+USE jugos;
+
+SELECT * FROM productos;
+
+-- UTILIZAR EL CAMPO PRODUCTO COMO PK
+ALTER TABLE productos ADD PRIMARY KEY (producto);
