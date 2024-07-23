@@ -1,0 +1,10 @@
+-- CONSULTAR TODOS LOS REGISTROS DE tbcliente
+SELECT *
+FROM tbcliente;
+
+-- CONSULTA DNI Y EL NOMBRE DE tbcliente
+SELECT dni, nombre
+FROM tbcliente;
+
+-- CONSULTA VARIOS CAMPOS CON DIFERENTES ALIAS 
+ss

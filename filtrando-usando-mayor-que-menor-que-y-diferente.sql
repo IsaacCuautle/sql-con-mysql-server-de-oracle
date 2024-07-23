@@ -1,0 +1,34 @@
+-- FILTRA POR CLIENTES CON UNA EDAD MAYOR A 26
+SELECT * 
+FROM tbcliente
+WHERE edad > 26;
+
+-- FILTRA POR CLIENTES CON UNA EDAD MENOR O IGUAL A 26
+SELECT * 
+FROM tbcliente
+WHERE edad <= 26;
+
+-- FILTRA POR CLIENTES CON UNA EDAD DIFERENTE A 26
+SELECT * 
+FROM tbcliente
+WHERE edad <> 26;
+
+-- FILTRA POR CLIENTES CON NOMBRE Posterior a Erika Carvajo (A-Z)
+SELECT * 
+FROM tbcliente
+WHERE nombre > 'Erica Carvajo';
+
+-- FILTRA POR CLIENTES CON NOMBRE ANTERIOR a Erika Carvajo (Z-A)
+SELECT * 
+FROM tbcliente
+WHERE nombre < 'Erica Carvajo';
+
+-- FILTRA POR CLIENTES CON NOMBRE ANTERIOR O IGUAL a Erika Carvajo (A-Z)
+SELECT * 
+FROM tbcliente
+WHERE nombre <= 'Erica Carvajo';
+
+-- FILTRA POR UN PRODUCTO CUYO PRECIO DE LKSTA ESTE ENTRE 28.49 Y 28.52
+SELECT * 
+FROM tbproducto
+WHERE precio_lista BETWEEN 28.49 AND 29.52;
