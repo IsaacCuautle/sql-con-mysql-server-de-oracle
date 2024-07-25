@@ -1,16 +1,16 @@
 USE jugos;
 show tables;
 -- AÑADIR PK EN LA TB tb-clientes
-ALTER TABLE tbclientes 
-ADD 
-PRIMARY KEY(DNI);
+ALTER TABLE  tbclientes 
+ADD
+PRIMARY KEY(dni) ;
 
 -- COLOCAR UN NUEVO CAMPO EN TB CLIENTES
 ALTER TABLE tbclientes 
 ADD 
 COLUMN(fecha_nacimiento DATE);
 
--- AGREGAR UN NUEVO REGISTRO A LA TB CLIENTES
+-- AGREGAR UN NUEVO REGISTRO A LA TB CLIENTES5
 INSERT INTO tbclientes(
 	dni,
     nombre,
