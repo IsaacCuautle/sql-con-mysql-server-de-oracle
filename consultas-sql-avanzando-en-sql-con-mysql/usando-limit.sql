@@ -1,0 +1,14 @@
+
+-- DEVUELVE LOS PRIMEROS 5 PRODUCTOS
+SELECT 
+	* 
+FROM
+	tabla_de_productos
+LIMIT 5;
+
+-- DEVUELVE DEL 5 AL 9 PRODUCTO PRODUCTOS
+SELECT 
+	* 
+FROM
+	tabla_de_productos
+LIMIT 5,4;
