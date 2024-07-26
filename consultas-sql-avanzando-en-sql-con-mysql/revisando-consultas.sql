@@ -1,0 +1,44 @@
+USE jugos_ventas;
+
+SHOW TABLES;
+
+-- CONSULTA TODOS LOS CAMPOS
+SELECT *
+FROM tabla_de_clientes;
+
+-- CONSULTA SOLO EL CAMPO DNI Y NOMBRE
+SELECT dni, nombre 
+FROM tabla_de_clientes;
+
+-- AGREGA UN ALIAS AL CAMPO DNI
+SELECT 
+	dni AS identificacion,
+    nombre 
+FROM tabla_de_clientes;
+
+-- CONSULTA LOS CAMPOS DE LA TABLA DE PRODUCTOS CUYO SABOR SEA UVA
+SELECT * 
+FROM tabla_de_productos
+WHERE 
+	SABOR = 'uva';
+    
+-- CONSULTA LOS CAMPOS DE LA TABLA DE PRODUCTOS CUYO SABOR SEA MANGO
+SELECT * 
+FROM tabla_de_productos
+WHERE 
+	SABOR = 'mango';
+    
+-- CONSULTA REGISTROS DLNDE ENVASE SEA BOTELLA PET
+SELECT *
+FROM tabla_de_productos
+WHERE envase = 'botella pet';
+
+-- CONSULTA TODOS LOS REGISTROS DONDE PRECIO > 16
+SELECT *
+FROM tabla_de_productos
+WHERE precio_lista > 16;
+
+-- CONSULTA TODOS LOS REGISTROS DONDE PRECIO ESTE EBTRE 16 Y 16.02
+SELECT *
+FROM tabla_de_productos
+WHERE precio_lista BETWEEN 16.0 AND 16.02;
