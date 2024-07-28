@@ -1,0 +1,75 @@
+-- CONSULTA LOS BARRIOS EN COMUN SIN REPETIR
+SELECT 
+	BARRIO
+FROM
+	tabla_de_clientes
+UNION    
+SELECT
+	BARRIO
+FROM
+	tabla_de_vendedores;
+    
+-- CONSULTA LOS BARRIOS EN COMUN REPETIDOS
+SELECT 
+	BARRIO
+FROM
+	tabla_de_clientes
+UNION ALL    
+SELECT
+	BARRIO
+FROM
+	tabla_de_vendedores;
+
+-- CONSULTA LOS BARRIOS Y NOMBRES EN COMUN SIN REPETIR
+SELECT 
+	BARRIO,
+    NOMBRE,
+    'CLIENTE' AS TIPO
+FROM
+	tabla_de_clientes
+UNION     
+SELECT
+	BARRIO,
+    NOMBRE, 
+    'VENDEDOR' AS TIPO
+FROM
+	tabla_de_vendedores;
+    
+-- CONSULTA LOS BARRIOS Y NOMBRES EN COMUN SIN REPETIR
+SELECT 
+	BARRIO,
+    NOMBRE,
+    'CLIENTE' AS TIPO,
+    DNI
+FROM
+	tabla_de_clientes
+UNION     
+SELECT
+	BARRIO,
+    NOMBRE, 
+    'VENDEDOR' AS TIPO,
+    MATRICULA
+FROM
+	tabla_de_vendedores;
+    
+
+-- FULL JOIN | CONSULTA LOS CLIENTES QUE NO TIENEN VENDEDOR
+SELECT
+	C.NOMBRE AS CLIENTE,
+    C.BARRIO,
+    V.NOMBRE AS VENDEDOR
+FROM
+	tabla_de_clientes AS C
+    LEFT JOIN
+    tabla_de_vendedores AS V
+    ON C.BARRIO = V.BARRIO
+UNION
+SELECT
+	C.NOMBRE AS CLIENTE,
+    C.BARRIO,
+    V.NOMBRE AS VENDEDOR
+FROM
+	tabla_de_clientes AS C
+    RIGHT JOIN
+    tabla_de_vendedores AS V
+    ON C.BARRIO = V.BARRIO;
