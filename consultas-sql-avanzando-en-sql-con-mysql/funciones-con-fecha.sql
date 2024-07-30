@@ -1,3 +1,5 @@
+-- https://www.w3schools.com/mysql/mysql_dates.asp
+
 -- ADDDATE, AÑADE UN INTERVALO A UNA FECHA
 SELECT 
 	ADDDATE(
