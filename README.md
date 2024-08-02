@@ -3,7 +3,7 @@ Curso completo desde los fundamentos de SQL hasta la administración avanzada de
 
 ## Cursos:
 - [Introducción a SQL con MySQL](https://github.com/IsaacCuautle/sql-con-mysql-server-de-oracle/tree/main/introducion-a-sql-con-mysql)
-- Consultas SQL
+- [Consultas SQL](https://github.com/IsaacCuautle/sql-con-mysql-server-de-oracle/tree/main/consultas-sql-avanzando-en-sql-con-mysql)
 - Comandos DML
 - Procedures SQL
 - SQL con MySQL
