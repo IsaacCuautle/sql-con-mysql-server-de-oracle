@@ -1,0 +1,3 @@
+SELECT A.DNI FROM tb_cliente A
+INNER JOIN tb_vendedor B
+ON A.BARRIO = B.BARRIO;
