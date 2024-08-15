@@ -1,0 +1,28 @@
+-- LTRIM QUITA ESPACIOS A LA IZQUIERDA
+SELECT
+	LTRIM(" MySQL es facil!  ");
+    
+-- RTRIM QUITA ESPACIOS A LA DERECHA
+SELECT
+	RTRIM(" MySQL es fscil! ");
+    
+-- TRIM QUITA ESPACIOS 
+SELECT
+	TRIM(" MySQL es fscil! ");
+    
+-- CONCAT
+SELECT
+	CONCAT("MySQL ","ES FACIL!");
+    
+-- UPPER    
+SELECT
+	UPPER("my sql es una bd interesante");
+    
+-- LOWER    
+SELECT
+	LOWER("MY SQL ES UNA DB INTERESANTE");
+    
+-- SUBSTRING
+SELECT 
+	SUBSTRING("MYSQL ES UNA BD INTERESANTE!",1,5);
+    
