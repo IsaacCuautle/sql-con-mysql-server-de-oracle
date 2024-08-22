@@ -12,5 +12,3 @@ Curso completo desde los fundamentos de SQL hasta la administración avanzada de
 
 ## Software utilizado
 - MySQL 8.0.24
-
-api.whatsapp.com%2Fsend%3Fphone%3D5215537592202%26text%3DEnlace%253A%
