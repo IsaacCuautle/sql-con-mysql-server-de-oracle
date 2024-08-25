@@ -1,0 +1,2 @@
+-- HABILITA LA CREACION DE FUNCIONES POR PARTE DEL USUARIO
+SET GLOBAL log_bin_trust_function_creators = 1;
