@@ -30,7 +30,7 @@ CREATE TABLE `vendedores` (
   `barrio` varchar(50) COLLATE utf8mb4_es_0900_ai_ci DEFAULT NULL,
   `comision` float DEFAULT NULL,
   `fecha_admision` date DEFAULT NULL,
-  `vaciones` bit(1) DEFAULT NULL,
+  `vacaciones` bit(1) DEFAULT NULL,
   PRIMARY KEY (`matricula`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_es_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -41,6 +41,7 @@ CREATE TABLE `vendedores` (
 
 LOCK TABLES `vendedores` WRITE;
 /*!40000 ALTER TABLE `vendedores` DISABLE KEYS */;
+INSERT INTO `vendedores` VALUES ('00235','Miguel Pavón Silva','Condesa',0.08,'2014-08-15',_binary '\0'),('00236','Claudia Morales','Del Valle',0.08,'2013-09-17',_binary ''),('00237','Concepción Martinez','Contadero',0.11,'2017-03-18',_binary ''),('00238','Patricia Sánchez','Oblatos',0.11,'2016-08-21',_binary '\0');
 /*!40000 ALTER TABLE `vendedores` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-08-24 21:55:28
+-- Dump completed on 2024-08-26 22:01:03
