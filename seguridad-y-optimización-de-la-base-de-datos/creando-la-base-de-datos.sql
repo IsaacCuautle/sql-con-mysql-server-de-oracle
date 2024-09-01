@@ -1,0 +1,23 @@
+USE sakila;
+
+-- CREA UNA TB df_table
+CREATE TABLE df_table 
+    (
+		ID INT,
+        NOMBRE VARCHAR(100)
+    );
+    
+-- CAMBIA EL MOTOR DE LA TB df_table DE InoDB a MyISAM
+ALTER TABLE df_table ENGINE = MyISAM;
+
+-- CREA UNA TB df_table1 CON EL MOTOR MEOMORY
+CREATE TABLE df_table1
+    (
+		ID INT,
+        NOMBRE VARCHAR(100)
+    )
+    
+    ENGINE = MEMORY;
+    
+-- MUESTRA LOS MOTORES DISPONIBLES
+SHOW ENGINES;
